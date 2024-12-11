@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceimportcopy" xml:lang="en-US">
+<title>importcopy Namespace Reference</title>
+<indexterm><primary>importcopy</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classimportcopy_1_1Report">Report</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>tuple[str, str] <link linkend="_namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695">clean_domain</link> (str url)</para>
+</listitem>
+            <listitem><para>Optional[Dict[str, Any]] <link linkend="_namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591">call_api</link> (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report)</para>
+</listitem>
+            <listitem><para>Dict[str, Any] <link linkend="_namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb">map_company_data</link> (Dict[str, Any] data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6">send_to_server</link> (Dict[str, Any] data, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180">process_website</link> (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd">process_websites</link> (List[str] websites, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a947b61674a221c558461a2ef2191f506">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespaceimportcopy_1a5ba4eca531aa9f5757f0ddb485f12a99">CONFIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1ab13e8695cf2118b41b7134e2c5e9e149">level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1a66dcff916575cf51248e6825968a89f4">format</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1a438c73c33617629f793cce08bcd2929b">filename</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591"/><section>
+    <title>call_api()</title>
+<indexterm><primary>call_api</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>call_api</secondary></indexterm>
+<para><computeroutput> Optional[Dict[str, Any]] importcopy.call_api (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_ab81657dc0f9261f7c83b8b563d8de591_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_ab81657dc0f9261f7c83b8b563d8de591_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695"/><section>
+    <title>clean_domain()</title>
+<indexterm><primary>clean_domain</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>clean_domain</secondary></indexterm>
+<para><computeroutput> tuple[str, str] importcopy.clean_domain (str url)</computeroutput></para>
+<para><literallayout><computeroutput>Extract and clean domain from URL, return both domain and full URL.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a95db84408e8ab5b62aa84a6495d0b695_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1a947b61674a221c558461a2ef2191f506"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>main</secondary></indexterm>
+<para><computeroutput> None importcopy.main ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a947b61674a221c558461a2ef2191f506_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a947b61674a221c558461a2ef2191f506_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb"/><section>
+    <title>map_company_data()</title>
+<indexterm><primary>map_company_data</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>map_company_data</secondary></indexterm>
+<para><computeroutput> Dict[str, Any] importcopy.map_company_data (Dict[str, Any] data)</computeroutput></para>
+<para><literallayout><computeroutput>Map agent.ai data to server format.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_ac54a37f23860048922edd3b6ffd177cb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180"/><section>
+    <title>process_website()</title>
+<indexterm><primary>process_website</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>process_website</secondary></indexterm>
+<para><computeroutput> None importcopy.process_website (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</computeroutput></para>
+<para><literallayout><computeroutput>Process a single website and send data to server.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a9ecd19839e084e03d0f109674e7a5180_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd"/><section>
+    <title>process_websites()</title>
+<indexterm><primary>process_websites</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>process_websites</secondary></indexterm>
+<para><computeroutput> None importcopy.process_websites (List[str] websites, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</computeroutput></para>
+<para><literallayout><computeroutput>Process websites with concurrent execution.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a5a2541c4fcf7f3c4d91742f684b4b6dd_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6"/><section>
+    <title>send_to_server()</title>
+<indexterm><primary>send_to_server</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>send_to_server</secondary></indexterm>
+<para><computeroutput> bool importcopy.send_to_server (Dict[str, Any] data, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</computeroutput></para>
+<para><literallayout><computeroutput>Send data to server with authentication.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceimportcopy_a4e0de389fecaa63edd9eab5f652689c6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceimportcopy_1a5ba4eca531aa9f5757f0ddb485f12a99"/><section>
+    <title>CONFIG</title>
+<indexterm><primary>CONFIG</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>CONFIG</secondary></indexterm>
+<para><computeroutput>dict importcopy.CONFIG</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;API_URL&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;https://api-lr.agent.ai/api/company/lite&apos;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;SERVER_URL&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;http://51.12.241.183:80&apos;</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;AUTH&apos;</emphasis>:&#32;{
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;username&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;ricarda&apos;</emphasis>,
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;password&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;4712YYu&apos;</emphasis>
+7 &#32;&#32;&#32;&#32;},
+8 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;HEADERS&apos;</emphasis>:&#32;{
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;accept&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;*/*&apos;</emphasis>,
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;accept-language&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7&apos;</emphasis>,
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;content-type&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;application/json&apos;</emphasis>,
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;origin&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;https://agent.ai&apos;</emphasis>,
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;priority&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;u=1,&#32;i&apos;</emphasis>,
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;referer&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;https://agent.ai/&apos;</emphasis>,
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-ch-ua&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;&quot;Google&#32;Chrome&quot;;v=&quot;131&quot;,&#32;&quot;Chromium&quot;;v=&quot;131&quot;,&#32;&quot;Not_A&#32;Brand&quot;;v=&quot;24&quot;&apos;</emphasis>,
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-ch-ua-mobile&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;?0&apos;</emphasis>,
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-ch-ua-platform&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;&quot;Windows&quot;&apos;</emphasis>,
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-fetch-dest&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;empty&apos;</emphasis>,
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-fetch-mode&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;cors&apos;</emphasis>,
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;sec-fetch-site&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;same-site&apos;</emphasis>,
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;user-agent&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;Mozilla/5.0&#32;(Windows&#32;NT&#32;10.0;&#32;Win64;&#32;x64)&#32;AppleWebKit/537.36&#32;(KHTML,&#32;like&#32;Gecko)&#32;Chrome/131.0.0.0&#32;Safari/537.36&apos;</emphasis>
+22 &#32;&#32;&#32;&#32;},
+23 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;MAX_WORKERS&apos;</emphasis>:&#32;1000,
+24 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;MAX_RETRIES&apos;</emphasis>:&#32;3
+25 }
+</programlisting></section>
+<anchor xml:id="_namespaceimportcopy_1a438c73c33617629f793cce08bcd2929b"/><section>
+    <title>filename</title>
+<indexterm><primary>filename</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>filename</secondary></indexterm>
+<para><computeroutput>importcopy.filename</computeroutput></para></section>
+<anchor xml:id="_namespaceimportcopy_1a66dcff916575cf51248e6825968a89f4"/><section>
+    <title>format</title>
+<indexterm><primary>format</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>format</secondary></indexterm>
+<para><computeroutput>importcopy.format</computeroutput></para></section>
+<anchor xml:id="_namespaceimportcopy_1ab13e8695cf2118b41b7134e2c5e9e149"/><section>
+    <title>level</title>
+<indexterm><primary>level</primary><secondary>importcopy</secondary></indexterm>
+<indexterm><primary>importcopy</primary><secondary>level</secondary></indexterm>
+<para><computeroutput>importcopy.level</computeroutput></para></section>
+</section>
+</section>

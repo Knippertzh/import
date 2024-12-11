@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="classimportcopy_1_1Report" kind="class"><name>importcopy::Report</name>
+    <member refid="classimportcopy_1_1Report_1a2dcccc066361977543978be4ddc5a646" kind="variable"><name>stats</name></member>
+    <member refid="classimportcopy_1_1Report_1a3e074dc73fc3936ca8b8c4c760f484ba" kind="function"><name>__init__</name></member>
+    <member refid="classimportcopy_1_1Report_1a8e5376b421c4a97dc242a254be770cd0" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classimportcopy_1_1TokenManager" kind="class"><name>importcopy::TokenManager</name>
+    <member refid="classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996" kind="variable"><name>token</name></member>
+    <member refid="classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048" kind="variable"><name>last_refresh</name></member>
+    <member refid="classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54" kind="variable"><name>refresh_interval</name></member>
+    <member refid="classimportcopy_1_1TokenManager_1ac671133301f43b28935ce6d92aaea7a4" kind="function"><name>__init__</name></member>
+    <member refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" kind="function"><name>get_token</name></member>
+    <member refid="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" kind="function"><name>refresh_token</name></member>
+  </compound>
+  <compound refid="namespaceimportcopy" kind="namespace"><name>importcopy</name>
+    <member refid="namespaceimportcopy_1a5ba4eca531aa9f5757f0ddb485f12a99" kind="variable"><name>CONFIG</name></member>
+    <member refid="namespaceimportcopy_1ab13e8695cf2118b41b7134e2c5e9e149" kind="variable"><name>level</name></member>
+    <member refid="namespaceimportcopy_1a66dcff916575cf51248e6825968a89f4" kind="variable"><name>format</name></member>
+    <member refid="namespaceimportcopy_1a438c73c33617629f793cce08bcd2929b" kind="variable"><name>filename</name></member>
+    <member refid="namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695" kind="function"><name>clean_domain</name></member>
+    <member refid="namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591" kind="function"><name>call_api</name></member>
+    <member refid="namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb" kind="function"><name>map_company_data</name></member>
+    <member refid="namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6" kind="function"><name>send_to_server</name></member>
+    <member refid="namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180" kind="function"><name>process_website</name></member>
+    <member refid="namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd" kind="function"><name>process_websites</name></member>
+    <member refid="namespaceimportcopy_1a947b61674a221c558461a2ef2191f506" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="importcopy_8py" kind="file"><name>importcopy.py</name>
+  </compound>
+  <compound refid="dir_4f82dfcd9404da3e20bb4e69ba3b9d11" kind="dir"><name>/tmp/github_repos_arch_doc_gen/Knippertzh/import</name>
+  </compound>
+</doxygenindex>

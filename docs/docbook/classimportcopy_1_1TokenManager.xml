@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classimportcopy_1_1TokenManager" xml:lang="en-US">
+<title>importcopy.TokenManager Class Reference</title>
+<indexterm><primary>importcopy.TokenManager</primary></indexterm>
+Collaboration diagram for importcopy.TokenManager:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classimportcopy_1_1TokenManager__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classimportcopy_1_1TokenManager_1ac671133301f43b28935ce6d92aaea7a4">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db">get_token</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659">refresh_token</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996">token</link></para>
+</listitem>
+            <listitem><para><link linkend="_classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048">last_refresh</link></para>
+</listitem>
+            <listitem><para><link linkend="_classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54">refresh_interval</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1ac671133301f43b28935ce6d92aaea7a4"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>importcopy.TokenManager.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db"/><section>
+    <title>get_token()</title>
+<indexterm><primary>get_token</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>get_token</secondary></indexterm>
+<para><computeroutput> str importcopy.TokenManager.get_token ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classimportcopy_1_1TokenManager_afd718ba0484c56b3a6de533372bff1db_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659"/><section>
+    <title>refresh_token()</title>
+<indexterm><primary>refresh_token</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>refresh_token</secondary></indexterm>
+<para><computeroutput> None importcopy.TokenManager.refresh_token ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classimportcopy_1_1TokenManager_aae7ceb3708ee23c30c98d36433869659_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048"/><section>
+    <title>last_refresh</title>
+<indexterm><primary>last_refresh</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>last_refresh</secondary></indexterm>
+<para><computeroutput>importcopy.TokenManager.last_refresh</computeroutput></para></section>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54"/><section>
+    <title>refresh_interval</title>
+<indexterm><primary>refresh_interval</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>refresh_interval</secondary></indexterm>
+<para><computeroutput>importcopy.TokenManager.refresh_interval</computeroutput></para></section>
+<anchor xml:id="_classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996"/><section>
+    <title>token</title>
+<indexterm><primary>token</primary><secondary>importcopy.TokenManager</secondary></indexterm>
+<indexterm><primary>importcopy.TokenManager</primary><secondary>token</secondary></indexterm>
+<para><computeroutput>importcopy.TokenManager.token</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/Knippertzh/import/<link linkend="_importcopy_8py">importcopy.py</link></section>
+</section>

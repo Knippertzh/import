@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceimportcopy" kind="namespace" language="Python">
+    <compoundname>importcopy</compoundname>
+    <innerclass refid="classimportcopy_1_1Report" prot="public">importcopy::Report</innerclass>
+    <innerclass refid="classimportcopy_1_1TokenManager" prot="public">importcopy::TokenManager</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceimportcopy_1a5ba4eca531aa9f5757f0ddb485f12a99" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict importcopy.CONFIG</definition>
+        <argsstring></argsstring>
+        <name>CONFIG</name>
+        <qualifiedname>importcopy.CONFIG</qualifiedname>
+        <initializer>=  {
+    &apos;API_URL&apos;: &apos;https://api-lr.agent.ai/api/company/lite&apos;,
+    &apos;SERVER_URL&apos;: &apos;http://51.12.241.183:80&apos;,
+    &apos;AUTH&apos;: {
+        &apos;username&apos;: &apos;ricarda&apos;,
+        &apos;password&apos;: &apos;4712YYu&apos;
+    },
+    &apos;HEADERS&apos;: {
+        &apos;accept&apos;: &apos;*/*&apos;,
+        &apos;accept-language&apos;: &apos;de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7&apos;,
+        &apos;content-type&apos;: &apos;application/json&apos;,
+        &apos;origin&apos;: &apos;https://agent.ai&apos;,
+        &apos;priority&apos;: &apos;u=1, i&apos;,
+        &apos;referer&apos;: &apos;https://agent.ai/&apos;,
+        &apos;sec-ch-ua&apos;: &apos;&quot;Google Chrome&quot;;v=&quot;131&quot;, &quot;Chromium&quot;;v=&quot;131&quot;, &quot;Not_A Brand&quot;;v=&quot;24&quot;&apos;,
+        &apos;sec-ch-ua-mobile&apos;: &apos;?0&apos;,
+        &apos;sec-ch-ua-platform&apos;: &apos;&quot;Windows&quot;&apos;,
+        &apos;sec-fetch-dest&apos;: &apos;empty&apos;,
+        &apos;sec-fetch-mode&apos;: &apos;cors&apos;,
+        &apos;sec-fetch-site&apos;: &apos;same-site&apos;,
+        &apos;user-agent&apos;: &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36&apos;
+    },
+    &apos;MAX_WORKERS&apos;: 1000,
+    &apos;MAX_RETRIES&apos;: 3
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceimportcopy_1ab13e8695cf2118b41b7134e2c5e9e149" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>importcopy.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceimportcopy_1a66dcff916575cf51248e6825968a89f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>importcopy.format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceimportcopy_1a438c73c33617629f793cce08bcd2929b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>importcopy.filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[str, str]</type>
+        <definition> tuple[str, str] importcopy.clean_domain</definition>
+        <argsstring>(str url)</argsstring>
+        <name>clean_domain</name>
+        <qualifiedname>importcopy.clean_domain</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract and clean domain from URL, return both domain and full URL.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="105" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="105" bodyend="130"/>
+        <referencedby refid="namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591" compoundref="importcopy_8py" startline="131" endline="189">call_api</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[Dict[str, Any]]</type>
+        <definition> Optional[Dict[str, Any]] importcopy.call_api</definition>
+        <argsstring>(str website, Report report)</argsstring>
+        <name>call_api</name>
+        <qualifiedname>importcopy.call_api</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>website</declname>
+        </param>
+        <param>
+          <type><ref refid="classimportcopy_1_1Report" kindref="compound">Report</ref></type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="131" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="131" bodyend="189"/>
+        <references refid="namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695" compoundref="importcopy_8py" startline="105" endline="130">clean_domain</references>
+        <referencedby refid="namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180" compoundref="importcopy_8py" startline="334" endline="343">process_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[str, Any]</type>
+        <definition> Dict[str, Any] importcopy.map_company_data</definition>
+        <argsstring>(Dict[str, Any] data)</argsstring>
+        <name>map_company_data</name>
+        <qualifiedname>importcopy.map_company_data</qualifiedname>
+        <param>
+          <type>Dict</type>
+          <declname>data</declname>
+          <array>[str, Any]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Map agent.ai data to server format.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="190" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="190" bodyend="313"/>
+        <referencedby refid="namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180" compoundref="importcopy_8py" startline="334" endline="343">process_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool importcopy.send_to_server</definition>
+        <argsstring>(Dict[str, Any] data, TokenManager token_manager)</argsstring>
+        <name>send_to_server</name>
+        <qualifiedname>importcopy.send_to_server</qualifiedname>
+        <param>
+          <type>Dict</type>
+          <declname>data</declname>
+          <array>[str, Any]</array>
+        </param>
+        <param>
+          <type><ref refid="classimportcopy_1_1TokenManager" kindref="compound">TokenManager</ref></type>
+          <declname>token_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Send data to server with authentication.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="314" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="314" bodyend="333"/>
+        <referencedby refid="namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180" compoundref="importcopy_8py" startline="334" endline="343">process_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None importcopy.process_website</definition>
+        <argsstring>(str website, Report report, TokenManager token_manager)</argsstring>
+        <name>process_website</name>
+        <qualifiedname>importcopy.process_website</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>website</declname>
+        </param>
+        <param>
+          <type><ref refid="classimportcopy_1_1Report" kindref="compound">Report</ref></type>
+          <declname>report</declname>
+        </param>
+        <param>
+          <type><ref refid="classimportcopy_1_1TokenManager" kindref="compound">TokenManager</ref></type>
+          <declname>token_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Process a single website and send data to server.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="334" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="334" bodyend="343"/>
+        <references refid="namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591" compoundref="importcopy_8py" startline="131" endline="189">call_api</references>
+        <references refid="namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb" compoundref="importcopy_8py" startline="190" endline="313">map_company_data</references>
+        <references refid="namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6" compoundref="importcopy_8py" startline="314" endline="333">send_to_server</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None importcopy.process_websites</definition>
+        <argsstring>(List[str] websites, TokenManager token_manager)</argsstring>
+        <name>process_websites</name>
+        <qualifiedname>importcopy.process_websites</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>websites</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type><ref refid="classimportcopy_1_1TokenManager" kindref="compound">TokenManager</ref></type>
+          <declname>token_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Process websites with concurrent execution.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="344" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="344" bodyend="354"/>
+        <referencedby refid="namespaceimportcopy_1a947b61674a221c558461a2ef2191f506" compoundref="importcopy_8py" startline="355" endline="381">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceimportcopy_1a947b61674a221c558461a2ef2191f506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None importcopy.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <qualifiedname>importcopy.main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="355" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="355" bodyend="381"/>
+        <references refid="namespaceimportcopy_1a947b61674a221c558461a2ef2191f506" compoundref="importcopy_8py" startline="355" endline="381">main</references>
+        <references refid="namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd" compoundref="importcopy_8py" startline="344" endline="354">process_websites</references>
+        <referencedby refid="namespaceimportcopy_1a947b61674a221c558461a2ef2191f506" compoundref="importcopy_8py" startline="355" endline="381">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

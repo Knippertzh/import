@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_4f82dfcd9404da3e20bb4e69ba3b9d11" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/Knippertzh/import Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/Knippertzh/import Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_importcopy_8py">importcopy.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
