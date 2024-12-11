@@ -53,6 +53,17 @@ class TokenManager:
         self.refresh_interval = 3600  # 1 hour
 
     def get_token(self) -> str:
+        """Retrieve the current authentication token.
+
+        This method checks if the token is absent or if it has expired based on
+        the last refresh time and the defined refresh interval. If the token is
+        invalid, it calls the `refresh_token` method to obtain a new token
+        before returning the current token.
+
+        Returns:
+            str: The current authentication token.
+        """
+
         if (not self.token or 
             not self.last_refresh or 
             time.time() - self.last_refresh > self.refresh_interval):
@@ -60,6 +71,15 @@ class TokenManager:
         return self.token
 
     def refresh_token(self) -> None:
+        """Refresh the authentication token.
+
+        This method sends a request to the server to refresh the authentication
+        token. It constructs a curl command with the necessary headers and data,
+        executes the command, and updates the token and last refresh time upon a
+        successful response. If an error occurs during the process, it logs the
+        error and raises the exception.
+        """
+
         try:
             command = [
                 'curl', '--location', f'{CONFIG["SERVER_URL"]}/login',
@@ -90,6 +110,22 @@ class Report:
         }
     
     def update(self, success: bool, domain: Optional[str] = None, retries: int = 0) -> None:
+        """Update the statistics based on the success of an operation.
+
+        This method updates the internal statistics of the class instance based
+        on whether an operation was successful or not. If the operation was
+        successful, it increments the success count and adds the domain to the
+        processed domains set if provided. If the operation failed, it
+        increments the error count and adds the domain to the failed domains set
+        if provided. Additionally, if there are retries, it updates the retry
+        count for the specified domain.
+
+        Args:
+            success (bool): Indicates whether the operation was successful.
+            domain (Optional[str]): The domain associated with the operation. Defaults to None.
+            retries (int): The number of retries for the operation. Defaults to 0.
+        """
+
         if success:
             self.stats["success_count"] += 1
             if domain:
@@ -103,7 +139,22 @@ class Report:
             self.stats["retry_count"][domain] = retries
 
 def clean_domain(url: str) -> tuple[str, str]:
-    """Extract and clean domain from URL, return both domain and full URL."""
+    """Extract and clean domain from a given URL.
+
+    This function takes a URL as input, ensures it has the correct scheme
+    (http or https), and then parses the URL to extract the domain. If the
+    domain starts with 'www.', it removes that prefix before returning the
+    cleaned domain and the full URL. The function also handles cases where
+    the URL does not start with a valid scheme by prepending 'https://' to
+    the URL.
+
+    Args:
+        url (str): The URL from which to extract the domain.
+
+    Returns:
+        tuple[str, str]: A tuple containing the cleaned domain in lowercase
+            and the full URL.
+    """
     try:
         if not url.startswith(('http://', 'https://')):
             full_url = 'https://' + url
@@ -129,6 +180,25 @@ def clean_domain(url: str) -> tuple[str, str]:
     max_tries=CONFIG['MAX_RETRIES']
 )
 def call_api(website: str, report: Report) -> Optional[Dict[str, Any]]:
+    """Call an external API to retrieve data for a given website.
+
+    This function takes a website URL and a report object, cleans the
+    domain, and sends a POST request to an external API. It constructs the
+    request with necessary headers and data, then processes the response. If
+    the response is valid, it enriches the response data with additional URL
+    information and updates the report object accordingly. In case of errors
+    during the API call or response processing, it logs the errors and
+    updates the report to indicate failure.
+
+    Args:
+        website (str): The URL of the website to call the API for.
+        report (Report): An object used to log the success or failure of the API call.
+
+    Returns:
+        Optional[Dict[str, Any]]: A dictionary containing the response data from
+        the API if successful, or None if there was an error.
+    """
+
     try:
         clean_website, full_url = clean_domain(website)
         data = {
@@ -188,7 +258,26 @@ def call_api(website: str, report: Report) -> Optional[Dict[str, Any]]:
         return None
 
 def map_company_data(data: Dict[str, Any]) -> Dict[str, Any]:
-    """Map agent.ai data to server format."""
+    """Map agent.ai data to server format.
+
+    This function takes a dictionary containing company data from agent.ai
+    and transforms it into a format suitable for the server. It validates
+    the input data structure, extracts relevant fields, and handles
+    potential errors gracefully. The function ensures that all necessary
+    fields are present in the returned dictionary, even if the input data is
+    incomplete or malformed.
+
+    Args:
+        data (Dict[str, Any]): A dictionary containing company data from
+
+    Returns:
+        Dict[str, Any]: A dictionary formatted for server use, containing
+        fields such as company name, location, contact information, and
+        other relevant details.
+
+    Raises:
+        TypeError: If the input data is not a dictionary.
+    """
     try:
         # Validate input
         if not isinstance(data, dict):
@@ -312,7 +401,22 @@ def map_company_data(data: Dict[str, Any]) -> Dict[str, Any]:
     max_tries=CONFIG['MAX_RETRIES']
 )
 def send_to_server(data: Dict[str, Any], token_manager: TokenManager) -> bool:
-    """Send data to server with authentication."""
+    """Send data to the server with authentication.
+
+    This function constructs a command to send data to a specified server
+    endpoint using the `curl` command-line tool. It retrieves an
+    authentication token from the provided `TokenManager` and includes it in
+    the request headers. The data is sent as URL-encoded form data. If the
+    operation is successful, it logs the success message; otherwise, it logs
+    an error message.
+
+    Args:
+        data (Dict[str, Any]): A dictionary containing the data to be sent to the server.
+        token_manager (TokenManager): An instance of TokenManager used to retrieve the authentication token.
+
+    Returns:
+        bool: True if the data was successfully sent to the server, False otherwise.
+    """
     try:
         token = token_manager.get_token()
         
@@ -332,7 +436,19 @@ def send_to_server(data: Dict[str, Any], token_manager: TokenManager) -> bool:
         return False
 
 def process_website(website: str, report: Report, token_manager: TokenManager) -> None:
-    """Process a single website and send data to server."""
+    """Process a single website and send data to server.
+
+    This function takes a website URL and a report object, calls an API to
+    retrieve data related to the website, maps the retrieved data to a
+    specific format, and then sends the mapped data to a server using a
+    token manager for authentication. If any errors occur during this
+    process, they are logged for debugging purposes.
+
+    Args:
+        website (str): The URL of the website to be processed.
+        report (Report): An object containing report data related to the website.
+        token_manager (TokenManager): An object responsible for managing authentication tokens.
+    """
     try:
         result = call_api(website, report)
         if result:
@@ -342,7 +458,22 @@ def process_website(website: str, report: Report, token_manager: TokenManager) -
         logging.error(f"Error in process_website for {website}: {str(e)}")
 
 def process_websites(websites: List[str], token_manager: TokenManager) -> None:
-    """Process websites with concurrent execution."""
+    """Process a list of websites concurrently.
+
+    This function takes a list of website URLs and processes each website
+    using concurrent execution. It utilizes a thread pool to manage multiple
+    threads that handle the processing of each website. A report object is
+    created to collect results or logs during the processing. The maximum
+    number of workers is defined in the configuration.
+
+    Args:
+        websites (List[str]): A list of website URLs to be processed.
+        token_manager (TokenManager): An instance of TokenManager to manage
+            authentication tokens during the processing.
+
+    Returns:
+        None: This function does not return any value.
+    """
     report = Report()
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=CONFIG['MAX_WORKERS']) as executor:
@@ -353,6 +484,16 @@ def process_websites(websites: List[str], token_manager: TokenManager) -> None:
         concurrent.futures.wait(futures)
 
 def main() -> None:
+    """Main function to process websites from a CSV file.
+
+    This function initializes a token manager to fetch an authentication
+    token and processes website URLs in chunks from a CSV file. It reads the
+    URLs in batches to optimize processing and logs the progress. The
+    function also calculates the total execution time for the processing.
+    It handles any exceptions that may occur during the execution and logs
+    an error message if an exception is raised.
+    """
+
     try:
         token_manager = TokenManager()
         # Initial token fetch to ensure we can connect to the server
