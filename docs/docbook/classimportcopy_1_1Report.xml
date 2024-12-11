@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classimportcopy_1_1Report" xml:lang="en-US">
+<title>importcopy.Report Class Reference</title>
+<indexterm><primary>importcopy.Report</primary></indexterm>
+Collaboration diagram for importcopy.Report:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classimportcopy_1_1Report__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classimportcopy_1_1Report_1a3e074dc73fc3936ca8b8c4c760f484ba">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classimportcopy_1_1Report_1a8e5376b421c4a97dc242a254be770cd0">update</link> (self, bool success, Optional[str] domain=None, int retries=0)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classimportcopy_1_1Report_1a2dcccc066361977543978be4ddc5a646">stats</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classimportcopy_1_1Report_1a3e074dc73fc3936ca8b8c4c760f484ba"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>importcopy.Report</secondary></indexterm>
+<indexterm><primary>importcopy.Report</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>importcopy.Report.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classimportcopy_1_1Report_1a8e5376b421c4a97dc242a254be770cd0"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>importcopy.Report</secondary></indexterm>
+<indexterm><primary>importcopy.Report</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None importcopy.Report.update ( self, bool success, Optional[str]  domain = <computeroutput>None</computeroutput>
+, int  retries = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classimportcopy_1_1Report_1a2dcccc066361977543978be4ddc5a646"/><section>
+    <title>stats</title>
+<indexterm><primary>stats</primary><secondary>importcopy.Report</secondary></indexterm>
+<indexterm><primary>importcopy.Report</primary><secondary>stats</secondary></indexterm>
+<para><computeroutput>importcopy.Report.stats</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/Knippertzh/import/<link linkend="_importcopy_8py">importcopy.py</link></section>
+</section>

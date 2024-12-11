@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classimportcopy_1_1TokenManager" kind="class" language="Python" prot="public">
+    <compoundname>importcopy::TokenManager</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.TokenManager::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <qualifiedname>importcopy.TokenManager.token</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="51" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" compoundref="importcopy_8py" startline="55" endline="61">importcopy.TokenManager.get_token</referencedby>
+        <referencedby refid="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" compoundref="importcopy_8py" startline="62" endline="79">importcopy.TokenManager.refresh_token</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.TokenManager::last_refresh</definition>
+        <argsstring></argsstring>
+        <name>last_refresh</name>
+        <qualifiedname>importcopy.TokenManager.last_refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" compoundref="importcopy_8py" startline="55" endline="61">importcopy.TokenManager.get_token</referencedby>
+        <referencedby refid="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" compoundref="importcopy_8py" startline="62" endline="79">importcopy.TokenManager.refresh_token</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>importcopy.TokenManager::refresh_interval</definition>
+        <argsstring></argsstring>
+        <name>refresh_interval</name>
+        <qualifiedname>importcopy.TokenManager.refresh_interval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="53" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" compoundref="importcopy_8py" startline="55" endline="61">importcopy.TokenManager.get_token</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimportcopy_1_1TokenManager_1ac671133301f43b28935ce6d92aaea7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>importcopy.TokenManager.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>importcopy.TokenManager.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str importcopy.TokenManager.get_token</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_token</name>
+        <qualifiedname>importcopy.TokenManager.get_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="55" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="55" bodyend="61"/>
+        <references refid="classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048" compoundref="importcopy_8py" startline="52">importcopy.TokenManager.last_refresh</references>
+        <references refid="classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54" compoundref="importcopy_8py" startline="53">importcopy.TokenManager.refresh_interval</references>
+        <references refid="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" compoundref="importcopy_8py" startline="62" endline="79">importcopy.TokenManager.refresh_token</references>
+        <references refid="classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996" compoundref="importcopy_8py" startline="51">importcopy.TokenManager.token</references>
+      </memberdef>
+      <memberdef kind="function" id="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None importcopy.TokenManager.refresh_token</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh_token</name>
+        <qualifiedname>importcopy.TokenManager.refresh_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="62" bodyend="79"/>
+        <references refid="classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048" compoundref="importcopy_8py" startline="52">importcopy.TokenManager.last_refresh</references>
+        <references refid="classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996" compoundref="importcopy_8py" startline="51">importcopy.TokenManager.token</references>
+        <referencedby refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" compoundref="importcopy_8py" startline="55" endline="61">importcopy.TokenManager.get_token</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>importcopy.TokenManager</label>
+        <link refid="classimportcopy_1_1TokenManager"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py" bodystart="49" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classimportcopy_1_1TokenManager_1ac671133301f43b28935ce6d92aaea7a4" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>__init__</name></member>
+      <member refid="classimportcopy_1_1TokenManager_1afd718ba0484c56b3a6de533372bff1db" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>get_token</name></member>
+      <member refid="classimportcopy_1_1TokenManager_1a0486dddd8ba4b5c411d779919efbf048" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>last_refresh</name></member>
+      <member refid="classimportcopy_1_1TokenManager_1adfc61a16a89f49b00767f761f1d25c54" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>refresh_interval</name></member>
+      <member refid="classimportcopy_1_1TokenManager_1aae7ceb3708ee23c30c98d36433869659" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>refresh_token</name></member>
+      <member refid="classimportcopy_1_1TokenManager_1a73dda97d38af425a6e2174514205d996" prot="public" virt="non-virtual"><scope>importcopy::TokenManager</scope><name>token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

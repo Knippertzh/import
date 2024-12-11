@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_importcopy_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/Knippertzh/import/importcopy.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classimportcopy_1_1TokenManager">importcopy.TokenManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classimportcopy_1_1Report">importcopy.Report</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceimportcopy">importcopy</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>tuple[str, str] <link linkend="_namespaceimportcopy_1a95db84408e8ab5b62aa84a6495d0b695">importcopy.clean_domain</link> (str url)</para>
+</listitem>
+            <listitem><para>Optional[Dict[str, Any]] <link linkend="_namespaceimportcopy_1ab81657dc0f9261f7c83b8b563d8de591">importcopy.call_api</link> (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report)</para>
+</listitem>
+            <listitem><para>Dict[str, Any] <link linkend="_namespaceimportcopy_1ac54a37f23860048922edd3b6ffd177cb">importcopy.map_company_data</link> (Dict[str, Any] data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespaceimportcopy_1a4e0de389fecaa63edd9eab5f652689c6">importcopy.send_to_server</link> (Dict[str, Any] data, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a9ecd19839e084e03d0f109674e7a5180">importcopy.process_website</link> (str website, <link linkend="_classimportcopy_1_1Report">Report</link> report, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a5a2541c4fcf7f3c4d91742f684b4b6dd">importcopy.process_websites</link> (List[str] websites, <link linkend="_classimportcopy_1_1TokenManager">TokenManager</link> token_manager)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceimportcopy_1a947b61674a221c558461a2ef2191f506">importcopy.main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespaceimportcopy_1a5ba4eca531aa9f5757f0ddb485f12a99">importcopy.CONFIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1ab13e8695cf2118b41b7134e2c5e9e149">importcopy.level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1a66dcff916575cf51248e6825968a89f4">importcopy.format</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceimportcopy_1a438c73c33617629f793cce08bcd2929b">importcopy.filename</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
